@@ -7,7 +7,6 @@ function Header() {
     <header>
       <nav>
         <p><a href="#home">&lsaquo;WM/&rsaquo;</a></p>
-        <button data-menu="button" aria-controls="menu"></button>
         <ul>
           <a href="#home">
           <li>Home</li>
