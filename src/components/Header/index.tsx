@@ -15,7 +15,7 @@ function Header() {
             <li>Sobre</li>
           </a>
           <a href="#experiencia">
-          <li>Experiência</li>
+          <li>Tecnologias</li>
         </a>
         <a href="#projetos">
           <li>Projetos</li>
