@@ -8,5 +8,30 @@ export const TechnologiesContainer = styled.div`
   min-height: 60vh;
   padding: 6.5%;
 `
+export const StudiedTechnologies = styled.div`
+text-align: center;
+`
 
-export const TechnologiesGrid = styled.div``
+
+export const TechnologiesGrid = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  `
+  
+
+export const TechnologiesCard = styled.div`
+  gap: 1.5rem;
+  padding: 1rem;
+  border: 1px soldid #333;
+  width: 45%;
+
+  svg {
+    font-size: 6rem;
+    color: #E44D26;
+  }
+
+  
+
+`

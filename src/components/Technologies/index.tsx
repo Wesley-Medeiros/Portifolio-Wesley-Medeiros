@@ -1,53 +1,34 @@
-import { TechnologiesCard, TechnologiesContainer, TechnologiesGrid } from "./styles"
-import { DiHtml5, DiCss3, DiJavascript, DiReact, } from 'react-icons/di';
+import { StudiedTechnologies, TechnologiesCard, TechnologiesContainer, TechnologiesGrid } from "./styles"
+import { DiHtml5, DiCss3, DiJavascript, DiReact, DiSass } from 'react-icons/di';
 import { SiTypescript } from 'react-icons/Si';
+import { AiFillGithub } from 'react-icons/Ai'
 
-interface Props {
-  tech: any
-}
 
 const technologies = [
   { id: 'html', name: 'HTML5', icon: <DiHtml5 /> },
   { id: 'css', name: 'CSS3', icon: <DiCss3 /> },
   { id: 'javascript', name: 'JavaScript',icon: <DiJavascript /> },
   { id: 'react', name: 'React', icon: <DiReact /> },
-  { id: 'typescript', name: 'TypeScript', icon: <SiTypescript /> }
+  { id: 'typescript', name: 'TypeScript', icon: <SiTypescript /> },
+  { id: 'github', name: 'GitHub', icon: <AiFillGithub /> },
+  { id: 'sass', name: 'Sass', icon: <DiSass /> }
 ]
 
-function Technologies({ tech }:Props) {
+function Technologies() {
   return(
     <TechnologiesContainer>
-    <h1>Tecnoligias</h1>
-    <div>
-      <div>
-        <ul>
-          <li>Experiêcias</li>
-          <li>Dominio</li>
-          <li>Estudando</li>
-        </ul>
-      </div>
-    <div>
-      <div>
-        <h2>Em busca da minha primeira experiência oficial.</h2>
-        <p>Estou disponível para bater um papo, você pode entrar em contato via e-mail wmedeiros.dev@gmail.com</p>
-      </div>
-    <div>
-      <h2>Tecnologias estudadas</h2>
+    <StudiedTechnologies>
+      <h1>Tecnologias estudadas</h1>
+      <img src="" alt="" />
       <TechnologiesGrid>
-        
+        {technologies.map((tech) => (
+          <TechnologiesCard id={tech.id} key={tech.id}> 
+            {tech.icon}
+          </TechnologiesCard>
+        ))}
       
       </TechnologiesGrid>
-      </div>
-    <div>
-      <h2>Ainda estudando</h2>
-      <span></span>
-      <p></p>
-      <p>
-        
-      </p>
-    </div>
-  </div>
-</div>
+    </StudiedTechnologies>
 </TechnologiesContainer>
   )
 }
