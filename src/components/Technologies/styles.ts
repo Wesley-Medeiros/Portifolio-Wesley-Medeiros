@@ -18,7 +18,7 @@ export const TechnologiesGrid = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 1.5rem;
-  `
+`
   
 
 export const TechnologiesCard = styled.div`
@@ -29,9 +29,6 @@ export const TechnologiesCard = styled.div`
 
   svg {
     font-size: 6rem;
-    color: #E44D26;
   }
-
-  
 
 `

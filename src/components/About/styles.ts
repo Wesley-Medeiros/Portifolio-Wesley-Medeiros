@@ -5,9 +5,9 @@ export const AboutContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   position: relative;
-  min-height: 60vh;
-  padding: 6.5%;
   background-color: #151515;
+  padding: 6.5% 15%;
+  min-height: 35vh;
 
 
   h1 {
@@ -25,6 +25,13 @@ export const AboutContainer = styled.div`
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
+  
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
 `
 
 export const Svg = styled.div`
@@ -34,12 +41,21 @@ export const Svg = styled.div`
     border-left: 5px solid #00d2df;
     transition: 0.4s;   
 }
+
+@media (max-width: 880px) {
+  max-width: 80%;
+  }
 `
 
 export const DescriptionContainer =styled.div`
   line-height: 1.5rem;
   width: 70%;
   margin-top: 2rem;
+
+  @media (max-width: 880px) {
+    width: 80%;
+    text-align: center;
+  }
   
 `
 
@@ -72,5 +88,10 @@ export const AboutButtons =styled.div`
   div:hover {
     background-color: #272727;
     text-shadow: 1px 1px 3px #00bbc5;
+  }
+
+  @media (max-width: 880px) {
+    width: 320px;
+    margin: 1rem auto;
   }
 `

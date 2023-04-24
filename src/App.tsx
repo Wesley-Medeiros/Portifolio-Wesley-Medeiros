@@ -6,15 +6,18 @@ import { ThemeProvider } from "styled-components"
 import { defaultTheme } from './styles/themes/default'
 
 import { GlobalStyle } from './styles/themes/global'
+import Footer from './components/Footer'
+
 
 function App() {
   return(
     <ThemeProvider theme={defaultTheme}>
-      <Header/>
-      <Home />
-      <About />
-      <Technologies />
-
+        <Header/>
+        <Home />
+        <About />
+        <Technologies />
+        <Footer />
+      
       <GlobalStyle />
     </ThemeProvider>
   

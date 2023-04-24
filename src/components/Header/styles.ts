@@ -60,4 +60,57 @@ nav p a {
 nav p a:hover {
   color: rgba(147, 88, 247, 1);
 }
+
+@media (max-width: 880px) {
+  nav {
+        padding: 0 5% !important;
+    }
+
+  nav ul {
+    display: none;
+  }
+  }
 `
+
+export const ButtonMenu = styled.button`
+  display: none;
+
+  @media (max-width: 880px) {
+    display: block;
+    background-color: #151515;
+    border: none;
+    border-top: 3px #00d2df solid;
+    padding: .8rem 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+
+    ::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: #00d2df;
+      transition: .3s transform;
+    }
+
+    ::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 50%;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: #00d2df;
+      transition: .3s transform;
+    }
+  }
+`
+
+
+

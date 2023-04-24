@@ -1,7 +1,6 @@
-import { } from "../Home/styles"
 import  Profile from "../../assets/illustration-profile.svg"
 import  curriculum  from "../../assets/Currículo Wesley Medeiros.pdf"
-import Cloud from "../../assets/download-da-nuvem.png"
+import Cloud from "../../assets/cloud.png"
 import email from "../../assets/email.png"
 import { AboutButtons, AboutContainer, DescriptionContainer, Svg } from "./styles"
 

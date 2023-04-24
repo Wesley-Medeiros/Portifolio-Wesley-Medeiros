@@ -1,5 +1,4 @@
-import { HeaderContainer } from "./styles"
-
+import { ButtonMenu, HeaderContainer } from "./styles"
 
 function Header() {
   return(
@@ -7,18 +6,16 @@ function Header() {
     <header>
       <nav>
         <p><a href="#home">&lsaquo;WM/&rsaquo;</a></p>
+        <ButtonMenu></ButtonMenu>
         <ul>
           <a href="#home">
           <li>Home</li>
         </a>
-          <a href="#sobre">
+          <a href="#about">
             <li>Sobre</li>
           </a>
-          <a href="#experiencia">
+          <a href="#technologies">
           <li>Tecnologias</li>
-        </a>
-        <a href="#projetos">
-          <li>Projetos</li>
         </a>
         </ul>
       </nav>
