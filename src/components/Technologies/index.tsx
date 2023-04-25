@@ -16,19 +16,19 @@ const technologies = [
 
 function Technologies() {
   return(
-    <TechnologiesContainer>
-    <StudiedTechnologies>
-      <h1>Tecnologias estudadas</h1>
-      <img src="" alt="" />
-      <TechnologiesGrid>
-        {technologies.map((tech) => (
-          <TechnologiesCard id={tech.id} key={tech.id}> 
-            {tech.icon}
-          </TechnologiesCard>
-        ))}
-      
-      </TechnologiesGrid>
-    </StudiedTechnologies>
+    <TechnologiesContainer id="technologies">
+      <StudiedTechnologies>
+        <h1>Tecnologias estudadas</h1>
+        <img src="" alt="" />
+        <TechnologiesGrid>
+          {technologies.map((tech) => (
+            <TechnologiesCard id={tech.id} key={tech.id}> 
+              {tech.icon}
+            </TechnologiesCard>
+          ))}
+        
+        </TechnologiesGrid>
+      </StudiedTechnologies>
 </TechnologiesContainer>
   )
 }

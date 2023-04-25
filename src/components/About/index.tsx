@@ -6,7 +6,7 @@ import { AboutButtons, AboutContainer, DescriptionContainer, Svg } from "./style
 
 function About() {
   return(
-    <AboutContainer>
+    <AboutContainer id="about">
     <Svg>
       <img src={Profile} alt="Uma foto de Wesley Medeiros" />
     </Svg>

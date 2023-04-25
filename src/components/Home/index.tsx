@@ -6,7 +6,7 @@ import DevCoding from "../../assets/illustration-coding.svg"
 function Home() {
   return(
   <>
-    <HomeContainer>
+    <HomeContainer id="home">
        <HomeLeft >
           <h1>Olá, eu sou</h1>
             <SpanSentence>Wesley</SpanSentence>

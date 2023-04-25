@@ -8,6 +8,7 @@ export const AboutContainer = styled.div`
   background-color: #151515;
   padding: 6.5% 15%;
   min-height: 35vh;
+  gap: 4rem;
 
 
   h1 {

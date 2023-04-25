@@ -1,22 +1,24 @@
+import { MouseEventHandler } from "react"
 import { ButtonMenu, HeaderContainer } from "./styles"
+import { Link } from "react-scroll"
 
-function Header() {
+function Header() { 
   return(
     <HeaderContainer>
     <header>
       <nav>
-        <p><a href="#home">&lsaquo;WM/&rsaquo;</a></p>
+        <p><Link to="home" spy={true} smooth={true} offset={100} duration={500}>&lsaquo;WM/&rsaquo;</Link></p>
         <ButtonMenu></ButtonMenu>
         <ul>
-          <a href="#home">
+          <Link to="home" spy={true} smooth={true} offset={100} duration={500}>
           <li>Home</li>
-        </a>
-          <a href="#about">
+        </Link>
+          <Link to="about" spy={true} smooth={true} offset={100} duration={500}>
             <li>Sobre</li>
-          </a>
-          <a href="#technologies">
+          </Link>
+          <Link to="technologies" spy={true} smooth={true} offset={100} duration={500}>
           <li>Tecnologias</li>
-        </a>
+        </Link>
         </ul>
       </nav>
     </header>
