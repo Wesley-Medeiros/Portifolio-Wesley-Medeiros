@@ -1,27 +1,30 @@
-import { MouseEventHandler } from "react"
-import { ButtonMenu, HeaderContainer } from "./styles"
+import { useState } from "react"
+import { HeaderContainer } from "./styles"
 import { Link } from "react-scroll"
+import MenuMobile from "../MenuMobile"
 
 function Header() { 
+
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+  
+
   return(
     <HeaderContainer>
-    <header>
       <nav>
-        <p><Link to="home" spy={true} smooth={true} offset={100} duration={500}>&lsaquo;WM/&rsaquo;</Link></p>
-        <ButtonMenu></ButtonMenu>
+        <p><Link to="home" spy={true} smooth={true} offset={50} duration={500}>&lsaquo;WM/&rsaquo;</Link></p>
+        <MenuMobile />
         <ul>
-          <Link to="home" spy={true} smooth={true} offset={100} duration={500}>
+          <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
           <li>Home</li>
-        </Link>
-          <Link to="about" spy={true} smooth={true} offset={100} duration={500}>
+          </Link>
+          <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
             <li>Sobre</li>
           </Link>
-          <Link to="technologies" spy={true} smooth={true} offset={100} duration={500}>
+          <Link to="technologies" spy={true} smooth={true} offset={50} duration={500}>
           <li>Tecnologias</li>
-        </Link>
+          </Link>
         </ul>
       </nav>
-    </header>
   </HeaderContainer>
   )
 }
