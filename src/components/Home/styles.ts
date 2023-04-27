@@ -25,6 +25,7 @@ export const HomeContainer = styled.main`
     text-align: center;
     flex-direction: column;
     transition: .3s transform;
+
   }
 }
 `

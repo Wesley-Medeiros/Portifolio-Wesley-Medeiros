@@ -6,9 +6,10 @@ export const AboutContainer = styled.div`
   align-items: center;
   position: relative;
   background-color: #151515;
-  padding: 6.5% 15%;
+  padding: 5rem;
   min-height: 35vh;
   gap: 4rem;
+  
 
 
   h1 {
@@ -16,7 +17,7 @@ export const AboutContainer = styled.div`
   }
 
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   p {
@@ -32,11 +33,13 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+
   }
 `
 
 export const Svg = styled.div`
   min-width: 300px;
+  margin-top: 3rem;
   
   img {
     border-left: 5px solid #00d2df;
@@ -53,9 +56,11 @@ export const DescriptionContainer =styled.div`
   width: 70%;
   margin-top: 2rem;
 
+
   @media (max-width: 880px) {
     width: 80%;
     text-align: center;
+    margin-bottom: 3rem;
   }
   
 `

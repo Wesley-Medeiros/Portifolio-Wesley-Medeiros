@@ -17,19 +17,30 @@ export const TechnologiesGrid = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1.5rem;  
-  `
+  margin-top: 1.5rem;
+  gap: 3rem;
 
-  export const TechnologiesCard = styled.div`
-  gap: 1.5rem;
-  padding: 1rem;
-  border: 1px soldid #333;
-  width: 45%;
-  
-  @media (max-width: 880px) {
-    padding: 0.5rem;
-}
   svg {
     font-size: 5rem;
   }
-`
+
+  @media (max-width: 880px) {
+    padding: 0.5rem;
+    gap: 0.5rem;
+
+    svg {
+      font-size: 4rem;
+    }
+  }
+    
+  @media (max-width: 540px) {
+    padding: 0.5rem;
+    gap: 0.1rem;
+
+    svg {
+      font-size: 3.5rem;
+    }
+  }
+  `
+
+ 

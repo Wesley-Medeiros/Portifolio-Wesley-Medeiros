@@ -1,4 +1,4 @@
-import { StudiedTechnologies, TechnologiesCard, TechnologiesContainer, TechnologiesGrid } from "./styles"
+import { StudiedTechnologies, TechnologiesContainer, TechnologiesGrid } from "./styles"
 import { DiHtml5, DiCss3, DiJavascript, DiReact, DiSass } from 'react-icons/di';
 import { SiTypescript } from 'react-icons/Si';
 import { AiFillGithub } from 'react-icons/Ai'
@@ -22,9 +22,9 @@ function Technologies() {
         <img src="" alt="" />
         <TechnologiesGrid>
           {technologies.map((tech) => (
-            <TechnologiesCard id={tech.id} key={tech.id}> 
+            <div id={tech.id} key={tech.id}> 
               {tech.icon}
-            </TechnologiesCard>
+            </div>
           ))}
         
         </TechnologiesGrid>

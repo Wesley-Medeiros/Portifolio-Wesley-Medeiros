@@ -55,6 +55,10 @@ nav p a {
   transition: 0.3s;
 }
 
+nav a {
+  cursor: pointer;
+}
+
 nav p a:hover {
   color: rgba(147, 88, 247, 1);
 }

@@ -14,7 +14,7 @@ function About() {
       <h1>Sobre mim</h1>
       <h2>Recife, Pernambuco</h2>
       <p>
-        Olá! Eu sou um estudante de ADS em busca de aprendizado e crescimento que está sempre disposto
+        Olá! Meu nome é Wesley Medeiros Ramalho, sou um estudante de ADS em busca de aprendizado e crescimento que está sempre disposto
         a fazer o possível para garantir sucesso em seus objetivos. Atualmente com foco na
         expansão de conhecimentos em atuações de projetos ligados a desenvolvimento Front End.
       </p>
