@@ -8,6 +8,21 @@ function MenuMobile() {
 
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 
+  const MenuMobileItens = [
+    {
+      name: 'Home',
+      link: 'home',
+    },
+    {
+      name: 'Sobre',
+      link: 'about',
+    },
+    {
+      name: 'Tecnologias',
+      link: 'technologies',
+    },
+  ];
+
   return(
     <MobileContainer> 
       {menuIsVisible ? <IoClose size={45} onClick={() => setMenuIsVisible(false)}/> : <HamburguerMenu onClick={() => setMenuIsVisible(!menuIsVisible)}></HamburguerMenu>} 

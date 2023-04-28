@@ -7,14 +7,17 @@ function Header() {
 
   const MenuItens = [
     {
+      id: 1,
       name: 'Home',
       link: 'home',
     },
     {
+      id: 2,
       name: 'Sobre',
       link: 'about',
     },
     {
+      id: 3,
       name: 'Tecnologias',
       link: 'technologies',
     },
