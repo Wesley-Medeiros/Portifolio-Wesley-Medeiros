@@ -29,7 +29,7 @@ function Header() {
         <p><Link to="home" spy={true} smooth={true} offset={50} duration={500}>&lsaquo;WM/&rsaquo;</Link></p>
         <MenuMobile />
         <ul>
-          {MenuItens.map((obj) => {return <li><Link to={obj.link} spy={true} smooth={true} offset={50} duration={500}>{obj.name}</Link></li>})}
+          {MenuItens.map((obj) => {return <li key={obj.id}><Link to={obj.link} spy={true} smooth={true} offset={50} duration={500}>{obj.name}</Link></li>})}
         </ul>
       </nav>
   </HeaderContainer>
