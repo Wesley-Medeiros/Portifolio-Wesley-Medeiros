@@ -2,6 +2,7 @@ import { MainButton, HomeContainer, HomeLeft, SpanCursor, SpanSentence, HomeRigh
 import  linkedin  from "../../assets/linkedin.png"
 import  github  from "../../assets/github.png"
 import DevCoding from "../../assets/illustration-coding.svg"
+import Typewriter from 'react-ts-typewriter';
 
 function Home() {
   return(
@@ -9,8 +10,7 @@ function Home() {
     <HomeContainer id="home">
        <HomeLeft >
           <h1>Olá, eu sou</h1>
-            <SpanSentence>Wesley</SpanSentence>
-            <SpanCursor></SpanCursor>
+            <SpanSentence><Typewriter speed={200} cursor={false} text='Wesley Medeiros' /></SpanSentence>
           <h1>Desenvolvedor Front-End</h1>
           <MainButton>
             <a href="https://www.linkedin.com/in/wesley-medeiros-694809196/" target="_blank">
