@@ -6,7 +6,7 @@
   "homepage": "https://github.com/Wesley-Medeiros/WesleyMedeiros.github.io",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base=./",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
