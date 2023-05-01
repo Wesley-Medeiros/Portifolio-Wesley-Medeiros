@@ -1,7 +1,7 @@
 import { StudiedTechnologies, TechnologiesContainer, TechnologiesGrid } from "./styles"
 import { DiHtml5, DiCss3, DiJavascript, DiReact, DiSass } from 'react-icons/di';
-import { SiTypescript } from 'react-icons/Si';
-import { AiFillGithub } from 'react-icons/Ai'
+import { SiTypescript } from 'react-icons/si';
+import { AiFillGithub } from 'react-icons/ai'
 
 
 const technologies = [
