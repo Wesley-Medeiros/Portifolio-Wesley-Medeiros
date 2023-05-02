@@ -151,7 +151,7 @@ Error generating stack: `+i.message+`
   }
 `;function xm(){return Oe(km,{id:"about",children:[R(Em,{children:R("img",{src:gh,alt:"Uma foto de Wesley Medeiros"})}),Oe(_m,{children:[R("h1",{children:"Sobre mim"}),R("h2",{children:"Recife, Pernambuco"}),R("p",{children:"Olá! Meu nome é Wesley Medeiros Ramalho, sou um estudante de ADS em busca de aprendizado e crescimento que está sempre disposto a fazer o possível para garantir sucesso em seus objetivos. Atualmente com foco na expansão de conhecimentos em atuações de projetos ligados a desenvolvimento Front End."}),Oe(Am,{children:[R("a",{href:yh,download:"",children:Oe("div",{children:[R("img",{src:wh,alt:""}),R("p",{children:"Currículo"})]})}),R("a",{href:"mailto: wmedeiros.dev@gmail.com?subject=Wesley, vim pelo seu portfólio! :)",target:"_blank",children:Oe("div",{children:[R("img",{src:Sh,alt:""}),R("p",{children:"E-mail"})]})})]})]})]})}const Cm=Ae.header`
 
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 1;
 
