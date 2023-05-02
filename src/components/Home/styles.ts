@@ -9,7 +9,6 @@ export const HomeContainer = styled.main`
   padding: 6.5%;
 
   @media (max-width: 1325px) {
-    height: 35px;
     padding: 6.5%;
 
     h1 {
