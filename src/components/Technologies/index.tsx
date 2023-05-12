@@ -19,7 +19,6 @@ function Technologies() {
     <TechnologiesContainer id="technologies">
       <StudiedTechnologies>
         <h1>Tecnologias estudadas</h1>
-        <img src="" alt="" />
         <TechnologiesGrid>
           {technologies.map((tech) => (
             <div id={tech.id} key={tech.id}> 
