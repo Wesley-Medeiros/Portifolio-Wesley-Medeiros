@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
   align-items: center;
   position: relative;
   background-color: #151515;
+  padding: 5rem;
   min-height: 35vh;
   gap: 4rem;
   
@@ -33,6 +34,7 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    padding: 0;
   }
 `
 
