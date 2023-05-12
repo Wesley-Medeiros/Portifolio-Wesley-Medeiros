@@ -62,6 +62,7 @@ Error generating stack: `+i.message+`
   align-items: center;
   position: relative;
   background-color: #151515;
+  padding: 5rem;
   min-height: 35vh;
   gap: 4rem;
   
@@ -88,6 +89,7 @@ Error generating stack: `+i.message+`
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    padding: 0;
   }
 `,Em=je.div`
   min-width: 300px;
