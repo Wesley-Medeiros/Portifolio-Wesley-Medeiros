@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
   background-color: #151515;
-  padding: 5rem;
   min-height: 35vh;
   gap: 4rem;
   
@@ -33,7 +33,6 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-
   }
 `
 
@@ -61,6 +60,12 @@ export const DescriptionContainer =styled.div`
     width: 80%;
     text-align: center;
     margin-bottom: 3rem;
+  }
+
+  @media (max-width: 570px) {
+    p {
+      width: 100%;
+    }
   }
   
 `

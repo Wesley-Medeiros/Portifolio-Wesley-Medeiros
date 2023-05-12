@@ -1,4 +1,4 @@
-import { MainButton, HomeContainer, HomeLeft, SpanCursor, SpanSentence, HomeRight } from "./styles"
+import { MainButton, HomeContainer, HomeLeft, HomeRight } from "./styles"
 import  linkedin  from "../../assets/linkedin.png"
 import  github  from "../../assets/github.png"
 import DevCoding from "../../assets/illustration-coding.svg"
@@ -10,7 +10,7 @@ function Home() {
     <HomeContainer id="home">
        <HomeLeft >
           <h1>Olá, eu sou</h1>
-            <SpanSentence><Typewriter speed={200} cursor={false} text='Wesley Medeiros' /></SpanSentence>
+            <span><Typewriter speed={200} cursor={false} text='Wesley Medeiros' /></span>
           <h1>Desenvolvedor Front-End</h1>
           <MainButton>
             <a href="https://www.linkedin.com/in/wesley-medeiros-694809196/" target="_blank">

@@ -63,21 +63,6 @@ export const HomeRight = styled.div`
   }
 `
 
-export const SpanSentence = styled.span`
-  width: 3px;
-  height: 42px;
-  display: inline-block;
-  position: relative;
-  top: 3px;
-  animation: blink 0.6s infinite alternate;
-
-  @media (max-width: 880px) {
-  width: 90%;
-  text-align: center;
-}
-`
-export const SpanCursor = styled.span``
-
 export const MainButton = styled.div`
   display: flex;
   width: 350px;
