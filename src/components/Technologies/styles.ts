@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const TechnologiesContainer = styled.div`
+export const TechnologiesContainer = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;

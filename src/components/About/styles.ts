@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.section`
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
   position: relative;
   background-color: #151515;
   padding: 5rem;
-  min-height: 35vh;
+  min-height: 60vh;
   gap: 4rem;
   
 
@@ -25,8 +25,6 @@ export const AboutContainer = styled.div`
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
   }
   
 
