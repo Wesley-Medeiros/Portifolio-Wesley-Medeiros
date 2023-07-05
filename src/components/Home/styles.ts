@@ -42,7 +42,7 @@ export const HomeLeft = styled.div`
 span {
   font-size: 3rem;
   text-transform: uppercase;
-  color: #00d2df;
+  color: ${({ theme }) => theme.blue};
   font-weight: 600;
   letter-spacing: 3px;
 }
@@ -78,10 +78,10 @@ export const MainButton = styled.div`
     padding: 3px 5px 5px;
     justify-content: space-evenly;
     width: 140px;
-    border: 2px solid #00d2df;
+    border: 2px solid ${({ theme }) => theme.blue};
     border-radius: 8px;
     position: relative;
-    background-color: #121212;
+    background-color: ${({ theme }) => theme.backgroundDark};
     margin-top: 1rem;
     transition: 0.3s;
     font-weight: 600;
@@ -92,7 +92,7 @@ export const MainButton = styled.div`
 
   a:hover {
     background-color: #272727;
-    text-shadow: 1px 1px 3px #00bbc5;
+    text-shadow: 1px 1px 3px ${({ theme }) => theme.blue};
   }
 
   @media (max-width: 880px) {

@@ -1,18 +1,25 @@
 import styled from 'styled-components'
 
+export const DivContainer = styled.div`
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+`;
+
 export const AboutContainer = styled.section`
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  background-color: #151515;
+  background-color: ${({ theme }) => theme.backgroundLight};
   padding: 5rem;
   min-height: 60vh;
   gap: 4rem;
   
-
-
   h1 {
     margin-bottom: 2rem;
   }
@@ -41,7 +48,7 @@ export const Svg = styled.div`
   margin-top: 3rem;
   
   img {
-    border-left: 5px solid #00d2df;
+    border-left: 5px solid ${({ theme }) => theme.blue};
     transition: 0.4s;   
 }
 
@@ -85,10 +92,10 @@ export const AboutButtons =styled.div`
     padding: 3px 5px 5px;
     justify-content: space-evenly;
     width: 140px;
-    border: 2px solid #00d2df;
+    border: 2px solid ${({ theme }) => theme.blue};
     border-radius: 8px;
     position: relative;
-    background-color: #121212;
+    background-color: ${({ theme }) => theme.backgroundDark};
     margin-top: 1rem;
     font-weight: 600;
     font-size: 0.95rem;
@@ -98,7 +105,7 @@ export const AboutButtons =styled.div`
 
   div:hover {
     background-color: #272727;
-    text-shadow: 1px 1px 3px #00bbc5;
+    text-shadow: 1px 1px 3px ${({ theme }) => theme.blue};
   }
 
   @media (max-width: 880px) {

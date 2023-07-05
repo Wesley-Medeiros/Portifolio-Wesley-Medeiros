@@ -10,7 +10,7 @@ nav {
   padding: 0 15%;
   display: flex;
   align-items: center;
-  background-color: #151515;
+  background-color: ${({ theme }) => theme.backgroundLight};
   border-bottom: 2px solid #272727;
   font-weight: bold;
   height: 80px;
@@ -34,7 +34,7 @@ nav ul li {
 nav ul li::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #00d2df;
+  border-bottom: 2px solid ${({ theme }) => theme.blue};
   margin-top: 5px;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -51,7 +51,7 @@ nav p {
 }
 
 nav p a {
-  color: #00d2df;
+  color: ${({ theme }) => theme.blue};
   transition: 0.3s;
 }
 

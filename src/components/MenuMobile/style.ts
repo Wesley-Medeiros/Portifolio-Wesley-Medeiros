@@ -17,9 +17,9 @@ export const HamburguerMenu = styled.div`
 
   @media (max-width: 880px) {
     display: block;
-    background-color: #151515;
+    background-color: ${({ theme }) => theme.backgroundLight};
     border: none;
-    border-top: 3px #00d2df solid;
+    border-top: 3px ${({ theme }) => theme.blue} solid;
     padding: 0.8rem 1rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -34,7 +34,7 @@ export const HamburguerMenu = styled.div`
       left: 0;
       height: 3px;
       width: 100%;
-      background-color: #00d2df;
+      background-color: ${({ theme }) => theme.blue};
       transition: .3s transform;
     }
 
@@ -46,7 +46,7 @@ export const HamburguerMenu = styled.div`
       left: 0;
       height: 3px;
       width: 100%;
-      background-color: #00d2df;
+      background-color: ${({ theme }) => theme.blue};
       transition: .3s transform;
     }
   }
@@ -77,7 +77,7 @@ export const ListContainer = styled.div`
     transition: 0.5s;
     transform: translateY(50px);
 
-    background: #151515; 
+    background: ${({ theme }) => theme.backgroundLight}; 
     background: linear-gradient(34deg, rgba(0,210,223,1) 0%, rgba(17,18,17,0.95) 95%);
     backdrop-filter: blur(3px);
 
@@ -97,7 +97,7 @@ export const ListContainer = styled.div`
     li::after {
       content: "";
       display: block;
-      border-bottom: 2px solid #00d2df;
+      border-bottom: 2px solid ${({ theme }) => theme.blue};
       margin-top: 5px;
       transform: scaleX(0);
       transition: transform 0.3s ease;
@@ -110,7 +110,7 @@ export const ListContainer = styled.div`
 
   a {
     cursor: pointer;
-    color: #00d2df;
+    color: ${({ theme }) => theme.blue};
     transition: 0.3s;
     margin-top: 2rem;
   }
